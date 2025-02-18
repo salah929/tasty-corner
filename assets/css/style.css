@@ -113,20 +113,23 @@ h2 {
 }
 
 /* Gellery page */
-main {
+
+
+#gallery {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    /* Add margin at the top to prevent content from being covered by the header */
-    margin-top: 47px;
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
+
+    padding-top: 4rem;
+    padding-bottom: .4rem;
 }
 
 #photos img {
+    border-radius: 10px;
     width: 100%;
     padding: 2px 2px 2px 2px;
-    line-height: 1em;
 }
 
 #photos {
