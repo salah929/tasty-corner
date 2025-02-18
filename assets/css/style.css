@@ -82,6 +82,10 @@ h2 {
     font-weight: bold;
   }
 
+  .hidden-heading {
+    display: none;
+}
+
 /* Header */
 
 #header .lead {
@@ -106,6 +110,27 @@ h2 {
 
 #tables a {
     margin-bottom: 2rem;
+}
+
+/* Gellery page */
+main {
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+}
+
+#photos img {
+    width: 100%;
+    padding: 2px 2px 2px 2px;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
 }
 
 /* Footer / contact */
@@ -154,4 +179,25 @@ h2 {
 /* Small screens and up */
 @media screen and (min-width: 576px) {
     
+}
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+/* Media query: tablet and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    #photos {
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #photos {
+        column-count: 4;
+    }
 }
