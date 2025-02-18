@@ -19,7 +19,6 @@
 
 body {
     font-family: var(--primary-font);
-    background-color: var(--background-color2);
 }
 
 h1,
@@ -57,18 +56,7 @@ h2 {
 .custom-button-filled:hover {
     border: 2px solid var(--secondary-color);
     background-color: var(--secondary-color);
-    color: white;
-}
-
-.custom-button-outline {
-    border: 3px solid var(--highlight-color);
-    padding: 7px 25px;
-    color: var(--highlight-color)
-}
-
-.custom-button-outline:hover {
-    background-color: var(--highlight-color);
-    color: white
+    color: var(--primary-color);
 }
 
 /* Navbar */
@@ -85,6 +73,7 @@ h2 {
 
 #header .lead {
     font-family: var(--secondary-font);
+    font-size: 35px;
 }
 
 /* Services */
