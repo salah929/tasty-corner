@@ -56,6 +56,10 @@ h2 {
     color: var(--primary-color);
 }
 
+#reservation button {
+    margin-bottom: 1rem;
+}
+
 /* Navbar */
 
 #navbar {
