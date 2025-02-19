@@ -7,12 +7,9 @@
     --secondary-font: "Nova Slim", cursive;
 
     --primary-color: #8b0000; /* dark red */
-    --secondary-color: #ffd700; /* golden yellow */
+    --secondary-color: rgba(255, 215, 0, 1); /* golden yellow */
+    --secondary-color-light: rgba(255, 215, 0, 0.5); /* golden yellow light*/
     --highlight-color: #556b2f; /* olive green */
-    --highlight-color-light: #b8bc86; /* light olive green */
-    --background-color: ##F5F5F5; /* off white */
-    --background-color2: #FAF3E0; /* light beige */
-    
 }
 
 /* Global styles */
@@ -67,19 +64,19 @@ h2 {
 }
 
 #navbar .logo {
-    width: 30px;
+    width: 32px;
 }
 
 .navbar-nav .nav-link {
-    color: var(--secondary-color) !important;
+    color: var(--secondary-color-light) !important;
   }
 
   .navbar-nav .nav-link.active {
-    font-weight: bold;
+    color: var(--secondary-color) !important;
   }
 
   .navbar-nav .nav-link:hover {
-    font-weight: bold;
+    color: var(--secondary-color) !important;
   }
 
   .hidden-heading {
@@ -104,7 +101,7 @@ h2 {
 
 /* Tables */
 
-#tables .card {
+#tables .card, #meals .card, #starters .card, #finale .card {
     margin-bottom: 1.5rem;
 }
 
@@ -113,8 +110,6 @@ h2 {
 }
 
 /* Gellery page */
-
-
 #gallery {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
@@ -135,6 +130,9 @@ h2 {
 #photos {
     line-height: 0;
 }
+
+/* Meals page */
+
 
 /* Footer / contact */
 
@@ -197,10 +195,37 @@ h2 {
     #photos {
         column-count: 3;
     }
+
+    #starters .card .card-body, #finale .card .card-body {
+        min-height: 142px;
+    }
 }
 
 @media screen and (min-width: 992px) {
     #photos {
         column-count: 4;
     }
+
+    #starters .card .card-body, #finale .card .card-body {
+        min-height: 120px;
+    }
 }
+
+@media screen and (min-width: 1200px) {
+    #meals .card .card-body {
+        min-height: 194px;
+    }
+
+    #starters .card .card-body, #finale .card .card-body {
+        min-height: 180px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #starters .card .card-body, #finale .card .card-body {
+        min-height: 146px;
+    }
+}
+
+
+
