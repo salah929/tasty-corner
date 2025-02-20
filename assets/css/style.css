@@ -85,13 +85,13 @@ h2 {
     display: none;
 }
 
-#navbar5 {
+#navbar-meals-container {
     display: flex;
     justify-content: center;  /* Centers horizontally */
     margin-top: 3.7rem;
 }
 
-#navbar6 {
+#navbar-meals {
     
     background-color: #8b0000;
     position:fixed;
@@ -218,7 +218,7 @@ h2 {
 /* Media queries */
 
 @media screen and (max-width: 300px) {
-    #navbar5, #navbar6 {
+    #navbar-meals-container, #navbar-meals {
         display: none;
     }
 }
