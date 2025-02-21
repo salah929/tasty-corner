@@ -13,20 +13,16 @@
 }
 
 /* Global styles */
-
 body {
     font-family: var(--primary-font);
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
 }
 
-h1,
-h2 {
+h1, h2 {
     text-transform: uppercase;
 }
 
@@ -38,14 +34,7 @@ h2 {
     color: var(--highlight-color);
 }
 
-/*
-.section {
-    padding-top: 5rem; -- prevent navbar overlap --
-}
-*/
-
-/* Buttons */
-
+/* Buttons in all pages */
 .custom-button-filled {
     border: 2px solid var(--highlight-color);
     background-color: var(--highlight-color);
@@ -59,7 +48,6 @@ h2 {
 }
 
 /* Navbar */
-
 #navbar {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -102,7 +90,6 @@ h2 {
 }
 
 /* Header */
-
 #header {
     padding-top: 5rem;
 }
@@ -116,6 +103,7 @@ h2 {
 #header img {
     width: 95%;
     float: right;
+    border-radius: 0.375rem;
 }
 
 #header p {
@@ -124,7 +112,6 @@ h2 {
 }
 
 /* Tables */
-
 #tables {
     padding-top: 5rem;
 }
@@ -149,20 +136,20 @@ h2 {
     padding-bottom: .4rem;
 }
 
-#photos img {
-    border-radius: 10px;
-    width: 100%;
-    padding: 2px 2px 2px 2px;
-}
-
 #photos {
     line-height: 0;
+}
+
+#photos img {
+    border-radius: 0.375rem;
+    width: 100%;
+    padding: 2px 2px 2px 2px;
 }
 
 /* Meals page */
 
 #starters, #meals, #finale {
-    padding-top: 7rem;
+    padding-top: 4rem;
 }
 
 #starters h2, #meals h2, #finale h2, #tables h2 {
@@ -175,7 +162,6 @@ h2 {
 }
 
 /* Footer / contact */
-
 #contact {
     background-color: var(--primary-color);
     color: white;
@@ -217,6 +203,8 @@ h2 {
 
 /* Media queries */
 
+/* X-Small devices (portrait phones, less than 576px) */
+/* Hide the meals navbar in very small devices */
 @media screen and (max-width: 300px) {
     #navbar-meals-container, #navbar-meals {
         display: none;
@@ -231,7 +219,7 @@ h2 {
     }
 }
 
-/* Media query: tablet and larger (768px and up) */
+/* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
     #photos {
         column-count: 3;
@@ -242,9 +230,14 @@ h2 {
     }
 }
 
+/* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #photos {
         column-count: 4;
+    }
+
+    #starters, #meals, #finale {
+        padding-top: 7rem;
     }
 
     #starters .card .card-body, #finale .card .card-body {
@@ -252,6 +245,7 @@ h2 {
     }
 }
 
+/* X-Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
     #meals .card .card-body {
         min-height: 194px;
@@ -262,13 +256,15 @@ h2 {
     }
 }
 
+/* XX-Large devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
     #starters .card .card-body, #finale .card .card-body {
         min-height: 146px;
     }
 }
 
-/* If screen height is less than 600px */
+/* If screen height is less than 800px */
+/* Push the footer in reservation and success pages to the bottom */
 @media screen and (max-height: 800px) {
     #success .btn {
       margin-bottom: 2rem;
@@ -279,7 +275,8 @@ h2 {
     }
 }
   
-  /* If screen height is between 601px and 800px */
+  /* If screen height is more than 800px */
+  /* Push the footer in reservation and success pages more to the bottom */
   @media screen and (min-height: 801px) {
     #success .btn {
         margin-bottom: 13rem;
