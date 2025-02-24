@@ -1,4 +1,4 @@
-# Love Running
+# Tasty Corner
 
 Tasty Corner is a site that aims to help food enthusiasts discover fresh culinary experiences on a regular basis. The site is designed for those who love exploring new recipes, local dining spots, and sharing their passion for great food. Tasty Corner will be a go-to resource for food lovers, offering clear insights on when and where to find the latest and tastiest culinary delights.
 

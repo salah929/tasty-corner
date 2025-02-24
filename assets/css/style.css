@@ -220,7 +220,7 @@ h2 {
 /* X-Small devices (portrait phones, less than 280px) */
 @media screen and (max-width: 280px) {
     /* Reduce the size of Meals navbar to fit the very small screens */
-    .size-70
+    #navbar-meals-list
     {
         font-size: small;
     }
